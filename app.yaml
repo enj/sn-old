@@ -1,0 +1,21 @@
+application: sn-old
+version: 0
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /favicon\.ico
+  static_files: static/favicon.ico
+  upload: static/favicon\.ico
+
+- url: /resume
+  static_files: static/resume.pdf
+  upload: static/resume\.pdf
+
+- url: /
+  script: sn.application
+
+libraries:
+- name: jinja2
+  version: latest

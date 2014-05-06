@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<atom:link href="https://sn-old.appspot.com/?y={{ year }}" rel="self" type="application/rss+xml" />
+
+ <title>Security Now! Old Episodes Netcast Podcast RSS {{ year }}</title>
+ <description>Security Now! {{ year }}: Episodes {{ total[-1][0] }} to {{ total[0][0] }}</description>
+ <link>https://sn-old.appspot.com/?y={{ year }}</link>
+ <lastBuildDate>Tue, 10 Sep 2013 00:01:00 +0000</lastBuildDate>
+ <pubDate>Tue, 10 Sep 2013 16:45:00 +0000</pubDate>
+ <ttl>1800</ttl>
+
+ {% block items %}
+ {% endblock %}
+
+</channel>
+</rss>

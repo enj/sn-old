@@ -1,0 +1,18 @@
+{% extends "base.xml" %}
+
+{% block items %}
+
+{% for entry in total %}
+
+ <item>
+  <title>Security Now {{ entry[0] }}</title>
+  <description>Security Now! Number {{ entry[0] }}</description>
+  <link>https://www.grc.com/sn/sn-{{ entry[1] }}.htm</link>
+  <enclosure url="https://media.grc.com/sn/sn-{{ entry[1] }}.mp3" length="104857600" type="audio/mpeg" />
+  <guid isPermaLink="false">{{ entry[2] }}</guid>
+  <pubDate>{{ entry[3] }} 16:45:00 +0000</pubDate>
+ </item>
+
+{% endfor %}
+
+{% endblock %}
